@@ -15,6 +15,8 @@ This repository is the official implementation of Emotion-LLaMA-v2 and provides:
 ### Comparison of Emotional Dataset
 ![](images/dataset_comparison.png)
 ### MMEVerse annotating pipeline
+[🤗 Hugging Face](https://huggingface.co/datasets/ooochen/MMEVerse)
+[🤖 Modelscope](https://modelscope.cn/datasets/ooochen/MMEVerse)
 ![dataAnnot](images/dataAnnot.png)
 ## Emtion-LLaMA-v2
 ![](images/pipeline.png)
@@ -34,9 +36,10 @@ This repository is the official implementation of Emotion-LLaMA-v2 and provides:
 
 
 ### Pretrained EmotionLLaMA-v2 Checkpoints
-|Emotion-LLaMA-v2(stage-1)|Emotion-LLaMA-v2(stage-2)
-|----|----|
-|[Download]()|[Download]()|
+| Model                    | HF Link                                                            | ModelScope Link|
+| ------------------------ | ------------------------------------------------------------------ | ---------------------------------------- |
+| Emotion-LLaMA-v2(stage-1)| [🤗 Hugging Face](https://huggingface.co/ooochen/Emotion-LLaMA-v2) | [🤖 Modelscope](https://modelscope.cn/models/ooochen/Emotion-LLaMA-v2)|
+| Emotion-LLaMA-v2(stage-2)| [🤗 Hugging Face](https://huggingface.co/ooochen/Emotion-LLaMA-v2) | [🤖 Modelscope](https://modelscope.cn/models/ooochen/Emotion-LLaMA-v2)|
 
 ## ⚙️ Setup
 
