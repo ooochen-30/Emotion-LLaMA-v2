@@ -1,7 +1,15 @@
 # Emotion-LLaMA-v2
 
+## 🌟 Overview
+**Emotion-LLaMA-v2** is a powerful framework for multimodal emotion recognition and reasoning.
 
-<!-- ## 🌟 Overview -->
+It performs end-to-end analysis of **visuals, vocal tones, and text subtitles** in videos to achieve a deep understanding of complex human emotions. Unlike traditional methods that rely on external face detectors, our model processes data end-to-end and introduces a unique **Conv-Attention module** to capture nuanced and dynamic emotional cues.
+
+This repository is the official implementation of Emotion-LLaMA-v2 and provides:
+
+- **Pre-trained model weights** for immediate use.
+- The large-scale, uniformly annotated **MMEVerse benchmark dataset**.
+- Complete guides for **local demo deployment, training, and inference**.
 
 ## 📂 Dataset
 ### Comparison of Emotional Dataset
