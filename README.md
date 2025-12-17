@@ -19,7 +19,7 @@
 |[whisper-large-v3](https://huggingface.co/openai/whisper-large-v3)| Audio Encoder|
 |[eva-vit-g](https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/eva_vit_g.pth)|Visual Encoder|
 |[Llama-2-7b-chat-hf](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf)|LLM|
-|[minigptv2]()|MLLM|
+|[minigptv2](https://github.com/Vision-CAIR/MiniGPT-4)|MLLM|
 
 
 
@@ -71,7 +71,7 @@ python app.py
 
 1. Prepare dataset
 
-Download the dataset you need and configure the [dataset config file](minigpt4/configs/datasets/default.yaml)
+Download the [dataset](minigpt4/datasets/Dataset.md) you need and configure the [dataset config file](minigpt4/configs/datasets/default.yaml)
 ```yaml
 datasets:
   dataset_name:
@@ -166,6 +166,7 @@ python inference.py
 ```
 
 ## 🙏 Acknowledgements
+- [Emotion-LLaMA](https://proceedings.neurips.cc/paper_files/paper/2024/file/c7f43ada17acc234f568dc66da527418-Paper-Conference.pdf): Multimodal Emotion Recognition and Reasoning.
 - [MiniGPT-v2](https://arxiv.org/abs/2310.09478): Large Language Model as a Unified Interface for Vision-Language Multi-task Learning.
 - [AffectGPT](https://arxiv.org/abs/2306.15401): Explainable Multimodal Emotion Recognition.
 - [LLaVA](https://llava-vl.github.io/): Large Language-and-Vision Assistant.
