@@ -1,0 +1,6 @@
+datasets:
+  dfew:
+    data_type: images
+    build_info:
+      image_path: /home/user/big_space/datasets/Emotion/DFEW/video
+      ann_path: /home/user/big_space/datasets/Emotion/DFEW/DFEW_merged.csv

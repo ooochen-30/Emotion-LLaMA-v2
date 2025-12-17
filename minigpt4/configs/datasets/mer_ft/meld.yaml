@@ -1,0 +1,6 @@
+datasets:
+  meld_ft:
+    data_type: images
+    build_info:
+      image_path: /home/user/big_space/datasets/Emotion/MELD/video
+      ann_path: /home/user/big_space/datasets/Emotion/AU_gpt/MELD_AU_gpt.csv

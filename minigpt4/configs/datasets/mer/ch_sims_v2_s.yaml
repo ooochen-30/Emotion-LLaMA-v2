@@ -1,0 +1,6 @@
+datasets:
+  ch_sims_v2_s:
+    data_type: images
+    build_info:
+      image_path: /home/user/big_space/datasets/Emotion/CH-SIMS_v2_s/video
+      ann_path: /home/user/big_space/datasets/Emotion/CH-SIMS_v2_s/CH-SIMS_v2_s_merged.csv

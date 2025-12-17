@@ -1,0 +1,6 @@
+datasets:
+  mafw:
+    data_type: images
+    build_info:
+      image_path: /home/user/big_space/datasets/Emotion/MAFW/video
+      ann_path: /home/user/big_space/datasets/Emotion/MAFW/MAFW_merged.csv

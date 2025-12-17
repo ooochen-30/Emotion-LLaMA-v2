@@ -1,0 +1,264 @@
+model:
+  arch: emotion_llama_v2
+  model_type: pretrain
+  max_txt_len: 1024
+  image_size: 448
+  end_sym: "</s>"
+  llama_model: "/home/user/Emotion-LLaMA-v2/checkpoints/Llama-2-7b-chat-hf"
+  ckpt: "/home/user/Emotion-LLaMA-v2/checkpoints/save_checkpoint/20250829155/checkpoint_9.pth"
+  use_grad_checkpoint: True
+  chat_template: True
+  lora_r: 64
+  lora_alpha: 16
+
+datasets:
+  coco_caption:
+    batch_size: 1
+    vis_processor:
+      train:
+        name: "blip2_image_train"
+        image_size: 448
+    text_processor:
+      train:
+        name: "blip_caption"
+    sample_ratio: 60  
+
+  refcoco: 
+    batch_size: 1
+    vis_processor:
+      train:
+        name: "blip2_image_train"
+        image_size: 448
+    text_processor:
+      train:
+        name: "blip_caption"
+    sample_ratio: 100
+
+  refcocop:
+    batch_size: 1
+    vis_processor:
+      train:
+        name: "blip2_image_train"
+        image_size: 448
+    text_processor:
+      train:
+        name: "blip_caption"
+    sample_ratio: 100
+
+  refcocog:
+    batch_size: 1
+    vis_processor:
+      train:
+        name: "blip2_image_train"
+        image_size: 448
+    text_processor:
+      train:
+        name: "blip_caption"
+    sample_ratio: 100
+
+  coco_vqa:    
+    batch_size: 1
+    vis_processor:
+      train:
+        name: "blip2_image_train"
+        image_size: 448
+    text_processor:
+      train:
+        name: "blip_caption"
+    sample_ratio: 75
+
+  ok_vqa:   
+    batch_size: 1
+    vis_processor:
+      train:
+        name: "blip2_image_train"
+        image_size: 448
+    text_processor:
+      train:
+        name: "blip_caption"
+    sample_ratio: 100
+
+  aok_vqa: 
+    batch_size: 1
+    vis_processor:
+      train:
+        name: "blip2_image_train"
+        image_size: 448
+    text_processor:
+      train:
+        name: "blip_caption"
+    sample_ratio: 72
+
+  gqa:  
+    batch_size: 1
+    vis_processor:
+      train:
+        name: "blip2_image_train"
+        image_size: 448
+    text_processor:
+      train:
+        name: "blip_caption"
+    sample_ratio: 100
+
+  mer2023_ft:  
+    batch_size: 1
+    vis_processor:
+      train:
+        name: "blip2_image_train"
+        image_size: 448
+    text_processor:
+      train:
+        name: "blip_caption"
+    sample_ratio: 60
+
+  caer_ft:  
+    batch_size: 1
+    vis_processor:
+      train:
+        name: "blip2_image_train"
+        image_size: 448
+    text_processor:
+      train:
+        name: "blip_caption"
+    sample_ratio: 135
+
+  dfew_ft:  
+    batch_size: 1
+    vis_processor:
+      train:
+        name: "blip2_image_train"
+        image_size: 448
+    text_processor:
+      train:
+        name: "blip_caption"
+    sample_ratio: 135
+
+  mc_eiu_ft:  
+    batch_size: 1
+    vis_processor:
+      train:
+        name: "blip2_image_train"
+        image_size: 448
+    text_processor:
+      train:
+        name: "blip_caption"
+    sample_ratio: 150
+
+  mafw_ft:  
+    batch_size: 1
+    vis_processor:
+      train:
+        name: "blip2_image_train"
+        image_size: 448
+    text_processor:
+      train:
+        name: "blip_caption"
+    sample_ratio: 105
+
+  bold_ft:  
+    batch_size: 1
+    vis_processor:
+      train:
+        name: "blip2_image_train"
+        image_size: 448
+    text_processor:
+      train:
+        name: "blip_caption"
+    sample_ratio: 135
+
+  e3_ft:  
+    batch_size: 1
+    vis_processor:
+      train:
+        name: "blip2_image_train"
+        image_size: 448
+    text_processor:
+      train:
+        name: "blip_caption"
+    sample_ratio: 195
+
+  iemocap_ft:  
+    batch_size: 1
+    vis_processor:
+      train:
+        name: "blip2_image_train"
+        image_size: 448
+    text_processor:
+      train:
+        name: "blip_caption"
+    sample_ratio: 120
+
+  ch_sims_v2_s_ft:
+    batch_size: 1
+    vis_processor:
+      train:
+        name: "blip2_image_train"
+        image_size: 448
+    text_processor:
+      train:
+        name: "blip_caption"
+    sample_ratio: 60
+
+  cmu_mosei_ft:  
+    batch_size: 1
+    vis_processor:
+      train:
+        name: "blip2_image_train"
+        image_size: 448
+    text_processor:
+      train:
+        name: "blip_caption"
+    sample_ratio: 240
+
+  cmu_mosi_ft:  
+    batch_size: 1
+    vis_processor:
+      train:
+        name: "blip2_image_train"
+        image_size: 448
+    text_processor:
+      train:
+        name: "blip_caption"
+    sample_ratio: 45
+
+  meld_ft:  
+    batch_size: 1
+    vis_processor:
+      train:
+        name: "blip2_image_train"
+        image_size: 448
+    text_processor:
+      train:
+        name: "blip_caption"
+    sample_ratio: 150
+
+run:
+  task: video_audio_pretrain
+  # optimizer
+  lr_sched: "linear_warmup_cosine_lr"
+  init_lr: 1e-4
+  min_lr: 1e-6
+  warmup_lr: 1e-6
+
+  weight_decay: 0.05
+  max_epoch: 10
+  num_workers: 6
+  warmup_steps: 1000
+  iters_per_epoch: 5000
+
+  seed: 42
+  output_dir: "/home/user/big_space/Emotion-LLaMA-v2/checkpoints/save_checkpoint"
+
+  amp: True
+  resume_ckpt_path: null
+
+  evaluate: False 
+  train_splits: ["train"]
+
+  device: "cuda"
+  world_size: 1
+  dist_url: "env://"
+  distributed: True
+
+  wandb_log: False
+  job_name: emotion_llama_v2_pretrain

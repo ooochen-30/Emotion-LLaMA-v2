@@ -1,0 +1,6 @@
+datasets:
+  mc_eiu_ft:
+    data_type: images
+    build_info:
+      image_path: /home/user/big_space/datasets/Emotion/MC-EIU/video
+      ann_path: /home/user/big_space/datasets/Emotion/AU_gpt/MC-EIU_AU_gpt.csv

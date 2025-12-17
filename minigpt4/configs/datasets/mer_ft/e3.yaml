@@ -1,0 +1,6 @@
+datasets:
+  e3_ft:
+    data_type: images
+    build_info:
+      image_path: /home/user/big_space/datasets/Emotion/E3/video
+      ann_path: /home/user/big_space/datasets/Emotion/AU_gpt/E3_AU_gpt.csv

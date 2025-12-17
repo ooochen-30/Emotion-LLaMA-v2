@@ -1,0 +1,6 @@
+datasets:
+  meld:
+    data_type: images
+    build_info:
+      image_path: /home/user/big_space/datasets/Emotion/MELD/video
+      ann_path: /home/user/big_space/datasets/Emotion/MELD/MELD_merged.csv

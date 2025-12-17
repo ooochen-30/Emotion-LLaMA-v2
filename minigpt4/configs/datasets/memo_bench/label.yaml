@@ -1,0 +1,8 @@
+
+datasets:
+  memo_bench:
+    data_type: images
+    build_info:
+      image_path: /home/user/big_space/datasets/Emotion/MEMO-Bench/dataset
+      ann_path:   /home/user/big_space/datasets/Emotion/MEMO-Bench/annotation_emo.csv
+        

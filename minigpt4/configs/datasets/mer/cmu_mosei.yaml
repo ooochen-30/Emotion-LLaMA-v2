@@ -1,0 +1,6 @@
+datasets:
+  cmu_mosei:
+    data_type: images
+    build_info:
+      image_path: /home/user/big_space/datasets/Emotion/CMU-MOSEI/video
+      ann_path: /home/user/big_space/datasets/Emotion/CMU-MOSEI/CMU-MOSEI_merged.csv

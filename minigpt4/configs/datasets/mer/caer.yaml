@@ -1,0 +1,6 @@
+datasets:
+  caer:
+    data_type: images
+    build_info:
+      image_path: /home/user/big_space/datasets/Emotion/CAER/video
+      ann_path: /home/user/big_space/datasets/Emotion/CAER/CAER_merged.csv

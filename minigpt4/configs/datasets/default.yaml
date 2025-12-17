@@ -1,0 +1,6 @@
+datasets:
+  dataset_name:
+    data_type: images
+    build_info:
+      image_path: the/path/to/dataset
+      ann_path: the/path/to/according/label

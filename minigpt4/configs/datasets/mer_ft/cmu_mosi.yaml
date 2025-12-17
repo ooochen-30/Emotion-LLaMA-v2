@@ -1,0 +1,6 @@
+datasets:
+  cmu_mosi_ft:
+    data_type: images
+    build_info:
+      image_path: /home/user/big_space/datasets/Emotion/CMU-MOSI/video
+      ann_path: /home/user/big_space/datasets/Emotion/AU_gpt/CMU-MOSI_AU_gpt.csv

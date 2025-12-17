@@ -1,0 +1,8 @@
+datasets:
+  refcoco:
+    data_type: images
+    build_info:
+      image_path: /home/user/big_space/datasets/General/MSCOCO/utils/refer-master/data/images/mscoco/train2014
+      ann_path: /home/user/big_space/datasets/General/MSCOCO/utils/refer-master/data
+      dataset: refcoco
+      splitBy: unc

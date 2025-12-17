@@ -1,0 +1,6 @@
+datasets:
+  bold_ft:
+    data_type: images
+    build_info:
+      image_path: /home/user/big_space/datasets/Emotion/BOLD/video
+      ann_path: /home/user/big_space/datasets/Emotion/AU_gpt/BOLD_AU_gpt.csv

@@ -1,0 +1,6 @@
+datasets:
+  iemocap:
+    data_type: images
+    build_info:
+      image_path: /home/user/big_space/datasets/Emotion/IEMOCAP/video
+      ann_path: /home/user/big_space/datasets/Emotion/IEMOCAP/IEMOCAP_merged.csv

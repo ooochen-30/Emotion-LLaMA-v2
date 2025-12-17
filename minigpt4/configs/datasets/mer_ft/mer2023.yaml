@@ -1,0 +1,6 @@
+datasets:
+  mer2023_ft:
+    data_type: images
+    build_info:
+      image_path: /home/user/big_space/datasets/Emotion/MER2024/video
+      ann_path: /home/user/big_space/datasets/Emotion/AU_gpt/MER2024_AU_gpt.csv
